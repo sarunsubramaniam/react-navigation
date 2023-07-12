@@ -8,11 +8,11 @@ const Sidebar = () => {
 	const [menu] = useState([
 		{
 			name: "Dashboard",
-			path: "/"
+			path: "/react-navigation/"
 		},
 		{
 			name: "Projects",
-			path: "/projects",
+			path: "/react-navigation/projects",
 			// submenu: [
 			// 	{
 			// 		name: "Test",
@@ -30,19 +30,19 @@ const Sidebar = () => {
 		},
 		{
 			name: "Team",
-			path: "/team"
+			path: "/react-navigation/team"
 		},
 		{
 			name: "Calender",
-			path: "/calendar"
+			path: "/react-navigation/calendar"
 		},
 		{
 			name: "Documents",
-			path: "/documents"
+			path: "/react-navigation/documents"
 		},
 		{
 			name: "Reports",
-			path: "/reports"
+			path: "/react-navigation/reports"
 		}
 	])
 		
@@ -52,8 +52,8 @@ const Sidebar = () => {
 				{
 					menu.map((item, index) => {
 						return(
-							<NavList key={index} className={`${location.pathname === item.path ? 'active' : ''}`}>
-								<Link to={item.path}>{item.name}</Link>
+							<NavList key={index} className={`${`${location.pathname}` === item.path ? 'active' : ''}`}>
+								<Link id={location.pathname} to={item.path}>{item.name}</Link>
 								{item.submenu && 
 									<Nav>
 										{item.submenu.map((subitem) => {

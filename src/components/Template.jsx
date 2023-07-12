@@ -12,9 +12,9 @@ const Template = ({data, name}) => {
 			</SubHeading>
 			<GridContainer>
 				{
-					data.map(element => {
+					data.map((element, index) => {
 						return(
-							<Grid $rowStart={element.rowStart} $columnStart={element.columnStart} $rowEnd={element.rowEnd} $columnEnd={element.columnEnd} />
+							<Grid key={index} $rowStart={element.rowStart} $columnStart={element.columnStart} $rowEnd={element.rowEnd} $columnEnd={element.columnEnd} />
 						)
 					})
 				}

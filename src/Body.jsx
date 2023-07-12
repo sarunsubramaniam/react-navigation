@@ -315,12 +315,12 @@ const Body = () => {
 	return(
 		<BodyWrapper>
 			<Routes>
-				<Route path="/" element={<Template data={pageData.dashboard} name="Dashboard" />} />
-				<Route path="projects" element={<Template data={pageData.projects} name="Projects" />} />
-				<Route path="team" element={<Template data={pageData.team} name="Team" />} />
-				<Route path="calendar" element={<Template data={pageData.calendar} name="Calendar" />} />
-				<Route path="documents" element={<Template data={pageData.documents} name="Documents" />} />
-				<Route path="reports" element={<Template data={pageData.reports} name="Reports" />} />
+				<Route path="react-navigation" element={<Template data={pageData.dashboard} name="Dashboard" />} />
+				<Route path="react-navigation/projects" element={<Template data={pageData.projects} name="Projects" />} />
+				<Route path="react-navigation/team" element={<Template data={pageData.team} name="Team" />} />
+				<Route path="react-navigation/calendar" element={<Template data={pageData.calendar} name="Calendar" />} />
+				<Route path="react-navigation/documents" element={<Template data={pageData.documents} name="Documents" />} />
+				<Route path="react-navigation/reports" element={<Template data={pageData.reports} name="Reports" />} />
 			</Routes>
 		</BodyWrapper>
 	)
